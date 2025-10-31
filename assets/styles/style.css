@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  header {
+    background-color: #1E80E0;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover,
+  nav a.ativo {
+    text-decoration: underline;
+  }
+  
+  .banner {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(120deg, #6FC1FF, #1E80E0, #001C74);
+    color: white;
+    border-radius: 8px;
+    margin: 20px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    margin-bottom: 15px;
+  }
+  
+  .sobre {
+    text-align: center;
+  }
+  
+  .foto {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .entrevista {
+    margin-bottom: 40px;
+  }
+  
+  .entrevista h3 {
+    margin-top: 20px;
+    color: #1E80E0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  input, textarea, button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #1E80E0;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #1E80E0;
+  }
+  
+  .galeria {
+    text-align: center;
+  }
+  
+  .grade-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .grade-imagens figure {
+    width: 250px;
+    transition: transform 0.3s ease;
+  }
+  
+  .grade-imagens img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .grade-imagens figure:hover {
+    transform: scale(1.05);
+  }
+  
+  figcaption {
+    margin-top: 8px;
+    font-style: italic;
+  }
+  
+  footer {
+    background-color: #1E80E0;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .grade-imagens {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
